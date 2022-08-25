@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me!</title>
+    <script src="https://kit.fontawesome.com/fa490e6de1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="contact-form.css" />
+</head>
+
+<body>
+    <header> 
+        <h1 class="logo">
+        <a href="index.html">
+            Bradley
+        </a>
+        </h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+           <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About-Me.html">About Me</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact-form.html">Contact Me</a></li>
+           </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
+    <main>
+        <section class="section-contact">
+            <div class="container">
+                <h1>Contact me!</h1>
+                <p>Fill out the form below to get in touch with me. I will try to get back to you within 48 hours. If I do not reply within that time please feel free to use the form again.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="firstname">First Name *</label>
+                        <input 
+                        type="text" 
+                        name="firstname" 
+                        id="firstname" 
+                        required class="form-element"
+                        placeholder="John" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name *</label>
+                        <input 
+                        type="text" 
+                        name="lastname" 
+                        id="lastname" 
+                        required class="form-element"
+                        placeholder="Doe" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        required class="form-element"
+                        placeholder="john.doe@example.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input 
+                        type="text" 
+                        name="company" 
+                        id="company" 
+                        required class="form-element"
+                        placeholder="Apple Inc." />
+                    </div>
+                    <div class="form-group full"
+                    <label for="message">What are you looking for?</label>
+                    <textarea 
+                    name="message" 
+                    id="message" 
+                    class="form-element"
+                    placeholder="I want a website please ..."></textarea>
+                    </div>
+                    <div class="submit-group">
+                        <input type="submit" value="SEND MESSAGE" />
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+<footer>
+  <div class="list">
+      <a href="index.html">Home</a>
+      <a href="About-Me.html">About Me</a>
+      <a href="work.html">Work</a>
+      <a href="contact-form.html">Contact Me</a>
+  </div>
+  <div class="social">
+    <a href="https://github.com/jesterb0206"><i class="fa-brands fa-github"></i></a>
+    <a href="https://linkedin.com/in/bradley-jester-9777b71aa"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+  <p>
+    &copy; 2022 Bradley Jester
+  </p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --background: linear-gradient(to right,  #FF532C, #F9980B, #F8CA2A);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper div{
+  height: 60px;
+  width: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: animate 4s linear infinite;
+}
+
+div .dot{
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.5);
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
+
+.wrapper div:nth-child(1){
+  top: 20%;
+  left: 20%;
+  animation: 8s animate linear infinite;
+} 
+
+.wrapper div:nth-child(2){
+  top: 60%;
+  left: 80%;
+  animation: 10s animate linear infinite;
+}
+
+.wrapper div:nth-child(3){
+  top: 40%;
+  left: 40%;
+  animation: 5s animate linear infinite;
+}
+
+.wrapper div:nth-child(4){
+  top: 66%;
+  left: 30%;
+  animation: 7s animate linear infinite;
+}
+
+.wrapper div:nth-child(5){
+  top: 90%;
+  left: 10%;
+  animation: 9s animate linear infinite;
+}
+
+.wrapper div:nth-child(6){
+  top: 30%;
+  left: 60%;
+  animation: 5s animate linear infinite;
+}
+
+.wrapper div:nth-child(7){
+  top: 70%;
+  left: 20%;
+  animation: 8s animate linear infinite;
+}
+
+.wrapper div:nth-child(8){
+  top: 75%;
+  left: 60%;
+  animation: 10s animate linear infinite;
+}
+
+.wrapper div:nth-child(9){
+  top: 50%;
+  left: 50%;
+  animation: 6s animate linear infinite;
+}
+
+.wrapper div:nth-child(10){
+  top: 45%;
+  left: 20%;
+  animation: 10s animate linear infinite;
+}
+
+.wrapper div:nth-child(11){
+  top: 10%;
+  left: 90%;
+  animation: 9s animate linear infinite;
+}
+
+.wrapper div:nth-child(12){
+  top: 20%;
+  left: 70%;
+  animation: 7s animate linear infinite;
+}
+
+.wrapper div:nth-child(13){
+  top: 20%;
+  left: 20%;
+  animation: 8s animate linear infinite;
+}
+
+.wrapper div:nth-child(14){
+  top: 60%;
+  left: 5%;
+  animation: 6s animate linear infinite;
+}
+
+.wrapper div:nth-child(15){
+  top: 90%;
+  left: 80%;
+  animation: 9s animate linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    transform: scale(0) translateY(0) rotate(70deg);
+  }
+  100%{
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+}
+
+body {
+	margin: 0;
+	background-image: linear-gradient(#F7DEC0, #F0EBD8, #50B0C8, #2c95b5, #2888A5, #247B95, #206E86, #1D6176, #195466);
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;  
+}
+
+.logo{
+  font-size: 3em;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.nav-toggle {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.nav-toggle-label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1 em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+nav{
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.nav-toggle:checked ~ nav{
+  transform: scale(1,1)
+}
+
+.nav-toggle:checked ~ nav a{
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  .logo{
+    grid-column: 2 / 3;
+  }
+
+  nav {
+    position: relative;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    grid-column: 3/ 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a{
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+}
+
+footer{
+  margin-top: auto;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to bottom right, #195466, #154756, #113A47, #0D2D37, #092027, #061317, #020607);
+  color: white;
+  padding: 20px 50px;
+}
+
+.list{
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.list a {
+  font-size: 24px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.social{
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.social a {
+  font-size: 48px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+p{
+  text-align: center;
+  font-size: 18px;
+}
