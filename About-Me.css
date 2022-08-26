@@ -179,9 +179,9 @@ nav a:hover {
 }
 
 #DIV{
-  position: relative;
-  margin-top: 63px;
-  margin-left: 200px;
+  position: absolute;
+  margin-top: 68px;
+  margin-left: 5px;
   justify-items: center;
   align-items: center;
   }
@@ -196,12 +196,30 @@ nav a:hover {
 
   .content h2:nth-child(1){
     color: transparent;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px black;
   }
 
   .content h2:nth-child(2){
     color: transparent;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px black;
+  }
+
+  .container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -200px;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .parent {
+    height: 500px;
+    width: 460px;
+    position: relative;
   }
 
   img{
@@ -253,9 +271,4 @@ nav a:hover {
   a:visited {
     text-decoration: none;
     color: white;
-  }
-  
-  p{
-    text-align: center;
-    font-size: 18px;
   }

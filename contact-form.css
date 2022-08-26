@@ -295,6 +295,7 @@ nav a:hover {
 
   .section-contact .container form .submit-group input[type="submit"]:hover {
     background-color: #064273;
+    border-radius: 1000px;
   }
 
 footer{
