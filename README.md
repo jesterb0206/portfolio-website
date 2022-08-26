@@ -10,6 +10,8 @@ N/A
 
 ## Usage
 
+![Website Screenshot](assets/images/website-screenshot.png)
+
 A few things to note:
 
 - If you click on my name in the upper left-hand corner of the header, it redirects you to the home page.
@@ -17,6 +19,8 @@ A few things to note:
 - If you click on the Font Awesome GitHub and LinkedIn icons in the footer, it redirects you to my GitHub and LinkedIn profiles.
 - In the Work section, click on the images to be redirected to my deployed web applications.
 - Make sure to fill out every section in the Contact Me! form, or else you will be unable to send me a message.
+
+https://jesterb0206.github.io/portfolio-website/index.html
 
 ## Credits
 
