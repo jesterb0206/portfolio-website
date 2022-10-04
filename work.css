@@ -23,13 +23,15 @@ header {
   text-align: center;
   position: fixed;
   z-index: 999;
-  width: 100%;  
+  width: 100%;
+  height: 8vh;
 }
 
 .logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 3em;
-  margin-top: 6px;
-  margin-bottom: 10px;
   color: white;
 }
 
@@ -179,13 +181,13 @@ nav a:hover {
 }
 
 .row{
-  margin-top: 72px;
+  margin-top: 3vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  column-gap: 50px;
+  column-gap: 2vw;
 }
 
 .textover { 
@@ -210,7 +212,7 @@ nav a:hover {
 .break {
   flex-basis: 100%;
   height: 0;
-  margin-top: 17px;
+  margin-top: 2vh;
 }
 
 @media screen and (min-width: 768px){
@@ -237,39 +239,43 @@ nav a:hover {
 
 footer{
   margin-top: auto;
-  position: relative;
+  position: sticky;
   width: 100%;
+  height: 12vh;
   background: linear-gradient(to bottom right, #195466, #154756, #113A47, #0D2D37, #092027, #061317, #020607);
   color: white;
-  padding: 20px 50px;
 }
 
 .list{
-  text-align: center;
-  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 
 .list a {
-  font-size: 24px;
+  font-size: 2.5vh;
   color: white;
   display: inline-block;
-  text-align: center;
-  margin: 20px 20px;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 .social{
-  text-align: center;
-  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 
 .social a {
-  font-size: 48px;
+  font-size: 4vh;
   color: white;
   display: inline-block;
-  text-align: center;
-  margin: 20px 20px;
+  margin-left: 2vh;
+  margin-right: 2vh;
 }
 
 a {
@@ -284,4 +290,36 @@ a:visited {
 p{
   text-align: center;
   font-size: 18px;
+}
+
+/* Scroll Bar */
+
+#outerDivWrapper, #outerDiv {
+  height: 80vh;
+  margin-top: 4vh;
+}
+
+#scrollableContent {
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  margin-top: 2vh;
+}
+
+.vertical-scroll::-webkit-scrollbar {
+  width: 3vw;
+}
+
+.vertical-scroll::-webkit-scrollbar-track {
+  border-radius: 100vw;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 50%);
+  border: 0.5vw solid hsl(0, 0%, 100%);
+  border-radius: 100vw;
+}
+
+.vertical-scroll::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 0%);
 }
