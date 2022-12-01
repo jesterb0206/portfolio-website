@@ -1,8 +1,8 @@
-# Bradley Jester's Portfolio Website 
+# Bradley Jester's Portfolio Website
 
 ## Description
 
-As a current student of the UW Professional & Continuing Education Coding Boot Camp, I was motivated to build a website to showcase my current and future portfolio projects. I built this website for hiring managers and recruiters, that way they can get a sense of my skills and abilities. I also built this website for my family and friends, that way they can get a feel for the type of work I am doing in Coding Boot Camp. Through building this website, I am now able to showcase my deployed web applications. Also, it was through building this website that I begun to learn about responsive web design and UI/UX design principles. 
+As a current student of the UW Professional & Continuing Education Coding Boot Camp, I was motivated to build a website to showcase my current and future portfolio projects. I built this website for hiring managers and recruiters, that way they can get a sense of my skills and abilities. I also built this website for my family and friends, that way they can get a feel for the type of work I am doing in Coding Boot Camp. Through building this website, I am now able to showcase my deployed web applications. Also, it was through building this website that I begun to learn about responsive web design and UI/UX design principles.
 
 ## Installation
 
@@ -10,7 +10,7 @@ N/A
 
 ## Usage
 
-![Website Screenshot](assets/images/website-screenshot.png)
+![Website Screenshot](public/images/website-Screenshot.png)
 
 A few things to note:
 
