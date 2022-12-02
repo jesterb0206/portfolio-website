@@ -1,18 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --background: linear-gradient(to right,  #FF532C, #F9980B, #F8CA2A);
+  --background: linear-gradient(to right, #ff532c, #f9980b, #f8ca2a);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	background-image: linear-gradient(#F7DEC0, #F0EBD8, #50B0C8, #2c95b5, #2888A5, #247B95, #206E86, #1D6176, #195466);
-	font-family: 'Fira Sans', sans-serif;
-	font-weight: 400;
+  margin: 0;
+  background-image: linear-gradient(
+    #f7dec0,
+    #f0ebd8,
+    #50b0c8,
+    #2c95b5,
+    #2888a5,
+    #247b95,
+    #206e86,
+    #1d6176,
+    #195466
+  );
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,7 +39,7 @@ header {
   height: 8vh;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +53,7 @@ header {
   left: -9999px !important;
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
   position: absolute;
   top: 0;
   left: 0;
@@ -64,7 +76,7 @@ header {
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -76,7 +88,7 @@ header {
   top: 7px;
 }
 
-nav{
+nav {
   position: absolute;
   text-align: left;
   top: 100%;
@@ -88,7 +100,7 @@ nav{
   transition: transform 400ms ease-in-out;
 }
 
-nav ul{
+nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -112,11 +124,11 @@ nav a:hover {
   color: white;
 }
 
-.nav-toggle:checked ~ nav{
-  transform: scale(1,1)
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
 }
 
-.nav-toggle:checked ~ nav a{
+.nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
@@ -130,7 +142,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
-  .logo{
+  .logo {
     grid-column: 2 / 3;
   }
 
@@ -138,7 +150,7 @@ nav a:hover {
     position: relative;
     text-align: left;
     transition: none;
-    transform: scale(1,1);
+    transform: scale(1, 1);
     background: none;
     top: initial;
     left: initial;
@@ -157,30 +169,30 @@ nav a:hover {
     margin-bottom: 0;
   }
 
-  nav a{
+  nav a {
     opacity: 1;
     position: relative;
   }
 
   nav a::before {
-    content: '';
+    content: "";
     display: block;
     height: 5px;
     background: black;
     position: absolute;
-    top: -.75em;
+    top: -0.75em;
     left: 0;
     right: 0;
     transform: scale(0, 1);
     transition: transform ease-in-out 250ms;
   }
-  
+
   nav a:hover::before {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 }
 
-.row{
+.row {
   margin-top: 3vh;
   display: flex;
   flex-direction: column;
@@ -190,8 +202,8 @@ nav a:hover {
   column-gap: 2vw;
 }
 
-.textover { 
-  position: relative; 
+.textover {
+  position: relative;
 }
 
 .textover figcaption {
@@ -215,38 +227,47 @@ nav a:hover {
   margin-top: 2vh;
 }
 
-@media screen and (min-width: 768px){
-.item:hover {
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
-  border-left: 5px solid white;
-  border-right: 5px solid white;
-  margin-top: -5px;
-  margin-bottom: -5px;
-  margin-left: -5px;
-  margin-right: -5px;
-  cursor: pointer;
-}
+@media screen and (min-width: 768px) {
+  .item:hover {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    cursor: pointer;
+  }
 }
 
-.image{
+.image {
   opacity: 0.25;
 }
 
-.image:hover{
+.image:hover {
   opacity: 1;
 }
 
-footer{
+footer {
   margin-top: auto;
   position: sticky;
   width: 100%;
   height: 12vh;
-  background: linear-gradient(to bottom right, #195466, #154756, #113A47, #0D2D37, #092027, #061317, #020607);
+  background: linear-gradient(
+    to bottom right,
+    #195466,
+    #154756,
+    #113a47,
+    #0d2d37,
+    #092027,
+    #061317,
+    #020607
+  );
   color: white;
 }
 
-.list{
+.list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,7 +284,7 @@ footer{
   margin-bottom: 2vh;
 }
 
-.social{
+.social {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -287,14 +308,15 @@ a:visited {
   color: white;
 }
 
-p{
+p {
   text-align: center;
   font-size: 18px;
 }
 
 /* Scroll Bar */
 
-#outerDivWrapper, #outerDiv {
+#outerDivWrapper,
+#outerDiv {
   height: 80vh;
   margin-top: 4vh;
 }

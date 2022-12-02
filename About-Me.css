@@ -1,18 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --background: linear-gradient(to right,  #FF532C, #F9980B, #F8CA2A);
+  --background: linear-gradient(to right, #ff532c, #f9980b, #f8ca2a);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	background-image: linear-gradient(#F7DEC0, #F0EBD8, #50B0C8, #2c95b5, #2888A5, #247B95, #206E86, #1D6176, #195466);
-	font-family: 'Fira Sans', sans-serif;
-	font-weight: 400;
+  margin: 0;
+  background-image: linear-gradient(
+    #f7dec0,
+    #f0ebd8,
+    #50b0c8,
+    #2c95b5,
+    #2888a5,
+    #247b95,
+    #206e86,
+    #1d6176,
+    #195466
+  );
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,10 +35,10 @@ header {
   text-align: center;
   position: fixed;
   z-index: 999;
-  width: 100%;  
+  width: 100%;
 }
 
-.logo{
+.logo {
   font-size: 3em;
   margin-top: 6px;
   margin-bottom: 10px;
@@ -39,7 +51,7 @@ header {
   left: -9999px !important;
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,7 +74,7 @@ header {
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -74,7 +86,7 @@ header {
   top: 7px;
 }
 
-nav{
+nav {
   position: absolute;
   text-align: left;
   top: 100%;
@@ -86,7 +98,7 @@ nav{
   transition: transform 400ms ease-in-out;
 }
 
-nav ul{
+nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -110,11 +122,11 @@ nav a:hover {
   color: white;
 }
 
-.nav-toggle:checked ~ nav{
-  transform: scale(1,1)
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
 }
 
-.nav-toggle:checked ~ nav a{
+.nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
@@ -128,7 +140,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
-  .logo{
+  .logo {
     grid-column: 2 / 3;
   }
 
@@ -136,7 +148,7 @@ nav a:hover {
     position: relative;
     text-align: left;
     transition: none;
-    transform: scale(1,1);
+    transform: scale(1, 1);
     background: none;
     top: initial;
     left: initial;
@@ -155,120 +167,129 @@ nav a:hover {
     margin-bottom: 0;
   }
 
-  nav a{
+  nav a {
     opacity: 1;
     position: relative;
   }
 
   nav a::before {
-    content: '';
+    content: "";
     display: block;
     height: 5px;
     background: black;
     position: absolute;
-    top: -.75em;
+    top: -0.75em;
     left: 0;
     right: 0;
     transform: scale(0, 1);
     transition: transform ease-in-out 250ms;
   }
-  
+
   nav a:hover::before {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 }
 
-#DIV{
+#DIV {
   position: absolute;
   margin-top: 68px;
   margin-left: 5px;
   justify-items: center;
   align-items: center;
-  }
+}
 
-  .content h2{
-    position: absolute;
-    transform: translated (-50%, -50%);
-    font-size: 4em;
-    justify-items: center;
-    align-items: ceneter;
-  }
+.content h2 {
+  position: absolute;
+  transform: translated (-50%, -50%);
+  font-size: 4em;
+  justify-items: center;
+  align-items: center;
+}
 
-  .content h2:nth-child(1){
-    color: transparent;
-    -webkit-text-stroke: 1px black;
-  }
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
 
-  .content h2:nth-child(2){
-    color: transparent;
-    -webkit-text-stroke: 1px black;
-  }
+.content h2:nth-child(2) {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+}
 
-  .container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: -200px;
-    left: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -200px;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
-  .parent {
-    height: 500px;
-    width: 460px;
-    position: relative;
-  }
+.parent {
+  height: 500px;
+  width: 460px;
+  position: relative;
+}
 
-  img{
-    max-width: 100%;
-    height: auto;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-  footer{
-    margin-top: auto;
-    position: relative;
-    width: 100%;
-    background: linear-gradient(to bottom right, #195466, #154756, #113A47, #0D2D37, #092027, #061317, #020607);
-    color: white;
-    padding: 20px 50px;
-  }
-  
-  .list{
-    text-align: center;
-    padding-bottom: 25px;
-    color: white;
-  }
-  
-  .list a {
-    font-size: 24px;
-    color: white;
-    display: inline-block;
-    text-align: center;
-    margin: 20px 20px;
-  }
-  
-  .social{
-    text-align: center;
-    padding-bottom: 25px;
-    color: white;
-  }
-  
-  .social a {
-    font-size: 48px;
-    color: white;
-    display: inline-block;
-    text-align: center;
-    margin: 20px 20px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  a:visited {
-    text-decoration: none;
-    color: white;
-  }
+footer {
+  margin-top: auto;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(
+    to bottom right,
+    #195466,
+    #154756,
+    #113a47,
+    #0d2d37,
+    #092027,
+    #061317,
+    #020607
+  );
+  color: white;
+  padding: 20px 50px;
+}
+
+.list {
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.list a {
+  font-size: 24px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.social a {
+  font-size: 48px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}

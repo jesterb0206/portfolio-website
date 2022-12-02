@@ -1,18 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --background: linear-gradient(to right,  #FF532C, #F9980B, #F8CA2A);
+  --background: linear-gradient(to right, #ff532c, #f9980b, #f8ca2a);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	background-image: linear-gradient(#F7DEC0, #F0EBD8, #50B0C8, #2c95b5, #2888A5, #247B95, #206E86, #1D6176, #195466);
-	font-family: 'Fira Sans', sans-serif;
-	font-weight: 400;
+  margin: 0;
+  background-image: linear-gradient(
+    #f7dec0,
+    #f0ebd8,
+    #50b0c8,
+    #2c95b5,
+    #2888a5,
+    #247b95,
+    #206e86,
+    #1d6176,
+    #195466
+  );
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,10 +35,10 @@ header {
   text-align: center;
   position: fixed;
   z-index: 999;
-  width: 100%;  
+  width: 100%;
 }
 
-.logo{
+.logo {
   font-size: 3em;
   margin-top: 6px;
   margin-bottom: 10px;
@@ -39,7 +51,7 @@ header {
   left: -9999px !important;
 }
 
-.nav-toggle-label{
+.nav-toggle-label {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,7 +74,7 @@ header {
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -74,7 +86,7 @@ header {
   top: 7px;
 }
 
-nav{
+nav {
   position: absolute;
   text-align: left;
   top: 100%;
@@ -86,7 +98,7 @@ nav{
   transition: transform 400ms ease-in-out;
 }
 
-nav ul{
+nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -110,11 +122,11 @@ nav a:hover {
   color: white;
 }
 
-.nav-toggle:checked ~ nav{
-  transform: scale(1,1)
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
 }
 
-.nav-toggle:checked ~ nav a{
+.nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
@@ -128,7 +140,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
-  .logo{
+  .logo {
     grid-column: 2 / 3;
   }
 
@@ -136,7 +148,7 @@ nav a:hover {
     position: relative;
     text-align: left;
     transition: none;
-    transform: scale(1,1);
+    transform: scale(1, 1);
     background: none;
     top: initial;
     left: initial;
@@ -155,26 +167,26 @@ nav a:hover {
     margin-bottom: 0;
   }
 
-  nav a{
+  nav a {
     opacity: 1;
     position: relative;
   }
 
   nav a::before {
-    content: '';
+    content: "";
     display: block;
     height: 5px;
     background: black;
     position: absolute;
-    top: -.75em;
+    top: -0.75em;
     left: 0;
     right: 0;
     transform: scale(0, 1);
     transition: transform ease-in-out 250ms;
   }
-  
+
   nav a:hover::before {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 }
 
@@ -182,132 +194,141 @@ nav a:hover {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Fira Sans', sans-serif;
-  }
+  font-family: "Fira Sans", sans-serif;
+}
 
-  .section-contact {
-    min-height: 100vh;
-    padding-top: 100px;
-  }
+.section-contact {
+  min-height: 100vh;
+  padding-top: 100px;
+}
 
+.section-contact .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (min-width: 768px) {
   .section-contact .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
   }
+}
 
-  @media (min-width: 768px) {
-    .section-contact .container {
-      padding-left: 64px;
-      padding-right: 64px;
-    }
+@media (min-width: 1024px) {
+  .section-contact .container {
+    padding-left: 128px;
+    padding-right: 128px;
   }
+}
 
-  @media (min-width: 1024px) {
-    .section-contact .container {
-      padding-left: 128px;
-      padding-right: 128px;
-    }
-  }
+.section-contact .container h1 {
+  color: black;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
 
-  .section-contact .container h1 {
-    color: black;
-    font-size: 36px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 16px;
-  }
+.section-contact .container p {
+  color: black;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
 
-  .section-contact .container p {
-    color: black;
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 32px;
-  }
+.section-contact .container form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  background-color: #f7dec0;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
 
+@media (min-width: 768px) {
   .section-contact .container form {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 16px;
-    background-color: #F7DEC0;
-    padding: 32px;
-    border-radius: 16px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  @media (min-width: 768px) {
-    .section-contact .container form {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+.section-contact .container form .form-group.full {
+  grid-column: 1 / -1;
+}
 
-  .section-contact .container form .form-group.full {
-    grid-column: 1 / -1;
-  }
+.section-contact .container form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 14px;
+}
 
-  .section-contact .container form .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: black;
-    font-size: 14px;
-  }
+.section-contact .container form .form-group .form-element {
+  appearance: none;
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: white;
+  transition: 0.4s;
+}
 
-  .section-contact .container form .form-group .form-element {
-    appearance: none;
-    outline: none;
-    border: none;
-    display: block;
-    width: 100%;
-    border-radius: 8px;
-    padding: 12px 16px;
-    background-color: white;
-    transition: 0.4s;
-  }
+.section-contact .container form .form-group .form-element:focus {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
 
-  .section-contact .container form .form-group .form-element:focus {
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
-    background-color: #FFF;
-  }
+.section-contact .container form .form-group textarea {
+  resize: none;
+  min-height: 100px;
+}
 
-  .section-contact .container form .form-group textarea {
-    resize: none;
-    min-height: 100px;
-  }
+.section-contact .container form .submit-group {
+  grid-column: 1 / -1;
+  text-align: right;
+}
 
-  .section-contact .container form .submit-group {
-    grid-column: 1 / -1;
-    text-align: right;
-  }
+.section-contact .container form .submit-group input[type="submit"] {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 12px 16px;
+  background-color: #1da2d8;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
 
-  .section-contact .container form .submit-group input[type="submit"] {
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-    padding: 12px 16px;
-    background-color: #1da2d8;
-    border-radius: 8px;
-    color: #FFF;
-    cursor: pointer;
-    transition: 0.4s;
-  }
+.section-contact .container form .submit-group input[type="submit"]:hover {
+  background-color: #064273;
+  border-radius: 1000px;
+}
 
-  .section-contact .container form .submit-group input[type="submit"]:hover {
-    background-color: #064273;
-    border-radius: 1000px;
-  }
-
-footer{
+footer {
   margin-top: auto;
   position: relative;
   width: 100%;
-  background: linear-gradient(to bottom right, #195466, #154756, #113A47, #0D2D37, #092027, #061317, #020607);
+  background: linear-gradient(
+    to bottom right,
+    #195466,
+    #154756,
+    #113a47,
+    #0d2d37,
+    #092027,
+    #061317,
+    #020607
+  );
   color: white;
   padding: 20px 50px;
 }
 
-.list{
+.list {
   text-align: center;
   padding-bottom: 25px;
   color: white;
@@ -321,7 +342,7 @@ footer{
   margin: 20px 20px;
 }
 
-.social{
+.social {
   text-align: center;
   padding-bottom: 25px;
   color: white;
@@ -344,7 +365,7 @@ a:visited {
   color: white;
 }
 
-p{
+p {
   text-align: center;
   font-size: 18px;
 }
