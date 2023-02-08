@@ -56,4 +56,5 @@ https://www.youtube.com/watch?v=YBUMHRL1fmo
 
 ## License
 
-Please refer to the LICENSE in the repo.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[This application is under the MIT license](https://opensource.org/licenses/MIT)
